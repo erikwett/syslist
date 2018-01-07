@@ -1,0 +1,25 @@
+{
+  "name": "syslist",
+  "version": "1.0.0",
+  "description": "Syslist extension for Qlik Sense",
+  "main": "syslist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikwett/syslist.git"
+  },
+  "keywords": [
+    "qlik",
+    "extension",
+    "system",
+    "data"
+  ],
+  "author": "Erik Wetterberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erikwett/syslist/issues"
+  },
+  "homepage": "https://github.com/erikwett/syslist#readme"
+}
