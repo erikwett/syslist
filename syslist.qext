@@ -3,7 +3,7 @@
 	"description": "List dimensions, measures, fields, bookmarks etc",
 	"type": "visualization",
 	"version": "1.0.0",
-	"icon": "extension",
+	"icon": "cogwheel",
 	"author": "Erik Wetterberg erik@upper88.com",
 	"homepage": "upper88.com",
 	"keywords": "qlik-sense, visualization",
