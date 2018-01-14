@@ -29,6 +29,9 @@ define(["qlik"],
 		}
 		return {
 			initialProperties: {
+				moneyFormat: {
+					qStringExpression: '=MoneyFormat'
+				},
 				qMeasureListDef: {
 					qType: "measure",
 					qData: {
@@ -72,6 +75,8 @@ define(["qlik"],
 				panel.className = 'panel';
 				el.appendChild(container);
 				el.appendChild(panel);
+				//show the variable
+				container.innerHTML = '<span class="header">MoneyFormat:</span>' + layout.moneyFormat;
 				//build the lists
 				for (var prop in layout) {
 					if (layout[prop].qItems) {
@@ -81,10 +86,8 @@ define(["qlik"],
 				}
 				//set up click event
 				$element.find('[data-prop]').on('click', function (ev) {
-					console.log('clicked', this);
 					panel.innerHTML = this.dataset.prop;
-					//	title: this.innerHTML
-				})
+				});
 				return qlik.Promise.resolve();
 			},
 			resize: function () {
